@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>みどり運輸 ルート配送ドライバー募集｜埼玉県川越市</title>
+<meta name="description" content="みどり運輸のルート配送ドライバー（正社員）募集。年間休日120日、平均残業 月8時間。未経験・中型免許の取得支援あり。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Barlow+Condensed:wght@600;700&display=swap">
+<style>
+/* Layout: 帰宅時刻を大きく見せるヒーロー → 数字で見る働き方 → 仕事内容 → 1日の流れ（時刻の縦軸） → 先輩の声 → 募集要項の表 → 選考の流れ → 応募フォーム */
+:root {
+  --bg: #ffffff;
+  --soft: #f1f6f5;
+  --ink: #1d2b2a;
+  --muted: #5b6b69;
+  --line: #d5e0de;
+  --teal: #0b7a6f;
+  --teal-dark: #075e55;
+  --yellow: #ffc72c;
+  --font-body: "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-num: "Barlow Condensed", "Arial Narrow", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.9; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.wrap { max-width: 1040px; margin-inline: auto; padding-inline: 20px; }
+.sample-bar { background: var(--ink); color: #fff; font-size: 12px; text-align: center; padding: 6px 16px; }
+
+.btn { display: inline-block; background: var(--yellow); color: var(--ink); font-weight: 700; text-decoration: none; padding: 15px 34px; border-radius: 8px; border: none; font: inherit; font-weight: 700; cursor: pointer; box-shadow: 0 4px 0 #d9a414; }
+.btn:hover { transform: translateY(1px); box-shadow: 0 3px 0 #d9a414; }
+
+/* ヘッダー */
+.head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px; }
+.logo { font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 8px; text-decoration: none; }
+.logo i { width: 26px; height: 18px; background: var(--teal); border-radius: 3px 8px 3px 3px; position: relative; }
+.logo i::after { content: ""; position: absolute; left: 4px; right: 4px; bottom: -5px; height: 6px; background: radial-gradient(circle at 3px 3px, var(--ink) 3px, transparent 3.5px) 0 0 / 12px 6px repeat-x; }
+.head small { font-size: 13px; color: var(--muted); }
+
+/* ヒーロー */
+.hero { background: var(--teal); color: #fff; padding-block: 56px 64px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 32px; align-items: center; }
+.hero .job { display: inline-block; background: #fff; color: var(--teal); font-weight: 700; font-size: 14px; padding: 2px 12px; border-radius: 4px; margin-bottom: 18px; }
+.hero h1 { font-size: clamp(30px, 5.2vw, 50px); line-height: 1.45; margin: 0 0 18px; text-wrap: balance; }
+.hero h1 em { font-style: normal; color: var(--yellow); }
+.hero p { margin: 0 0 28px; color: #d8efec; max-width: 30em; }
+.clock { justify-self: center; width: min(260px, 100%); aspect-ratio: 1; border-radius: 50%; background: #fff; position: relative; box-shadow: 0 0 0 10px rgba(255,255,255,.18); }
+.clock::before { content: ""; position: absolute; inset: 8%; border-radius: 50%; background: conic-gradient(from 0deg, rgba(255,199,44,.55) 0deg 180deg, transparent 180deg); }
+.clock .hand { position: absolute; left: 50%; bottom: 50%; transform-origin: 50% 100%; background: var(--ink); border-radius: 3px; }
+.clock .hour { width: 6px; height: 26%; transform: translateX(-50%) rotate(180deg); }
+.clock .min { width: 4px; height: 36%; transform: translateX(-50%) rotate(0deg); }
+.clock .center { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; border-radius: 50%; background: var(--ink); transform: translate(-50%, -50%); }
+.clock .cap { position: absolute; left: 0; right: 0; bottom: 18%; text-align: center; font-weight: 700; color: var(--teal); font-size: 14px; }
+@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .clock { width: 180px; order: -1; } }
+
+/* 数字 */
+.nums { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 2px solid var(--ink); border-radius: 12px; overflow: hidden; margin-top: -28px; background: #fff; position: relative; }
+.nums div { padding: 18px 16px; border-left: 1px solid var(--line); text-align: center; }
+.nums div:first-child { border-left: none; }
+.nums b { display: block; font-family: var(--font-num); font-size: 48px; line-height: 1.1; color: var(--teal); font-variant-numeric: tabular-nums; }
+.nums b small { font-family: var(--font-body); font-size: 15px; margin-left: 2px; color: var(--ink); }
+.nums span { font-size: 13px; color: var(--muted); }
+@media (max-width: 760px) { .nums { grid-template-columns: 1fr 1fr; } .nums div:nth-child(3) { border-left: none; } .nums div:nth-child(n+3) { border-top: 1px solid var(--line); } }
+
+/* セクション共通 */
+.sec { padding-block: 72px; }
+.sec-soft { background: var(--soft); }
+.sec h2 { font-size: clamp(24px, 3.6vw, 32px); margin: 0 0 32px; line-height: 1.5; display: flex; align-items: center; gap: 12px; }
+.sec h2::before { content: ""; width: 8px; height: 1.2em; background: var(--yellow); border-radius: 2px; flex: none; }
+
+/* 仕事内容 */
+.work { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.work p { margin: 0 0 16px; }
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.points li { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+.points li b { background: var(--teal); color: #fff; font-size: 12px; border-radius: 4px; padding: 2px 8px; white-space: nowrap; margin-top: 3px; }
+@media (max-width: 760px) { .work { grid-template-columns: 1fr; gap: 24px; } }
+
+/* 1日の流れ */
+.day { list-style: none; margin: 0; padding: 0; position: relative; max-width: 720px; }
+.day::before { content: ""; position: absolute; left: 4.6em; top: 10px; bottom: 10px; width: 2px; background: var(--line); }
+.day li { display: grid; grid-template-columns: 4em 1fr; gap: 0 1.6em; padding-bottom: 22px; position: relative; }
+.day time { font-family: var(--font-num); font-weight: 700; font-size: 22px; color: var(--teal); text-align: right; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.day li::after { content: ""; position: absolute; left: calc(4.6em - 5px); top: 9px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 3px solid var(--teal); }
+.day li.end::after { background: var(--yellow); border-color: var(--yellow); }
+.day h3 { margin: 0; font-size: 17px; }
+.day p { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+
+/* 先輩の声 */
+.voices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.voice { background: #fff; border-radius: 12px; padding: 24px; border: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+.voice .who { display: flex; align-items: center; gap: 12px; }
+.voice .face { width: 52px; height: 52px; border-radius: 50%; background: var(--soft); border: 2px solid var(--teal); display: grid; place-items: center; font-weight: 700; color: var(--teal); flex: none; }
+.voice .who p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.5; }
+.voice .who b { display: block; color: var(--ink); font-size: 16px; }
+.voice h3 { margin: 4px 0 0; font-size: 18px; line-height: 1.6; }
+.voice > p { margin: 0; font-size: 15px; }
+.voice-note { font-size: 12px; color: var(--muted); margin: 12px 0 0; }
+@media (max-width: 760px) { .voices { grid-template-columns: 1fr; } }
+
+/* 募集要項 */
+.req-wrap { overflow-x: auto; }
+.req { width: 100%; border-collapse: collapse; min-width: 320px; }
+.req th, .req td { border-bottom: 1px solid var(--line); padding: 16px 12px; text-align: left; vertical-align: top; }
+.req th { width: 9em; background: var(--soft); font-size: 15px; }
+.req td small { display: block; color: var(--muted); font-size: 14px; }
+.req .money { font-family: var(--font-num); font-size: 26px; font-weight: 700; color: var(--teal); font-variant-numeric: tabular-nums; }
+
+/* 選考の流れ */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; counter-reset: s; }
+.steps li { counter-increment: s; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 18px; position: relative; }
+.steps li::before { content: counter(s); display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--teal); color: #fff; font-family: var(--font-num); font-weight: 700; font-size: 18px; margin-bottom: 8px; }
+.steps h3 { margin: 0 0 4px; font-size: 16px; }
+.steps p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.7; }
+@media (max-width: 760px) { .steps { grid-template-columns: 1fr 1fr; } }
+
+/* 応募フォーム */
+.apply { background: var(--teal); color: #fff; }
+.apply h2 { color: #fff; }
+.apply .lead { margin: -16px 0 28px; color: #d8efec; }
+.form { background: #fff; color: var(--ink); border-radius: 12px; padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 18px; max-width: 760px; }
+.field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.field.full { grid-column: 1 / -1; }
+.field label, .field legend { font-weight: 700; font-size: 15px; }
+.field label em, .field legend em { font-style: normal; font-size: 12px; background: #d93b2b; color: #fff; padding: 0 6px; border-radius: 3px; margin-left: 6px; }
+.field input, .field select { font: inherit; padding: 11px 12px; border: 2px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); width: 100%; }
+.field input:focus, .field select:focus { border-color: var(--teal); outline: none; }
+fieldset.field { border: none; padding: 0; margin: 0; }
+.radios { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.radios label { font-weight: 400; display: flex; align-items: center; gap: 6px; }
+.form .submit { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.form .submit small { color: var(--muted); font-size: 13px; }
+.form-msg { grid-column: 1 / -1; margin: 0; border-radius: 6px; padding: 12px 14px; font-size: 15px; }
+.form-msg.ok { background: #e6f4f1; color: var(--teal-dark); }
+.form-msg.ng { background: #fdeceb; color: #a4281e; }
+@media (max-width: 600px) { .form { grid-template-columns: 1fr; padding: 20px; } }
+
+footer { background: var(--ink); color: #b9c7c5; font-size: 13px; padding-block: 28px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+</style>
+</head>
+<body>
+
+<div class="sample-bar">このサイトは制作サンプルです。会社名・住所・人物・待遇はすべて架空のものです。</div>
+
+<div class="wrap head">
+  <a class="logo" href="#"><i aria-hidden="true"></i>みどり運輸</a>
+  <small>採用担当 直通 049-000-0000</small>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="job">ルート配送ドライバー｜正社員</span>
+      <h1>夕方<em>6時</em>には、<br>家に帰れる運送会社です。</h1>
+      <p>配送先は決まったスーパー8店舗。毎日同じルートを走るので、道に迷うことも、夜遅くまでの配達もありません。未経験の方も、入社後に中型免許の取得を会社が支援します。</p>
+      <a class="btn" href="#apply">応募する（3分で完了）</a>
+    </div>
+    <div class="clock" role="img" aria-label="時計が6時を指している">
+      <span class="hand hour"></span><span class="hand min"></span><span class="center"></span>
+      <span class="cap">18:00 退勤</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="nums">
+    <div><b>120<small>日</small></b><span>年間休日</span></div>
+    <div><b>8<small>時間</small></b><span>月の平均残業</span></div>
+    <div><b>7<small>割</small></b><span>未経験から入社</span></div>
+    <div><b>0<small>円</small></b><span>中型免許の取得費用</span></div>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <h2>どんな仕事？</h2>
+    <div class="work">
+      <div>
+        <p>川越市の物流センターで食品を積み込み、市内と近隣のスーパーへ届ける仕事です。1日に回るのは4〜5店舗。担当するルートは基本的に固定です。</p>
+        <p>荷物はカゴ台車に載っているので、店舗では台車ごと降ろします。重い荷物を一つずつ手で運ぶことは、ほとんどありません。</p>
+      </div>
+      <ul class="points">
+        <li><b>車両</b><span>4トントラック（オートマ車が中心）</span></li>
+        <li><b>エリア</b><span>川越市・坂戸市・鶴ヶ島市</span></li>
+        <li><b>荷物</b><span>冷蔵・常温の食品（カゴ台車で積み降ろし）</span></li>
+        <li><b>距離</b><span>1日 約80km（高速道路は使いません）</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-soft">
+  <div class="wrap">
+    <h2>ある1日の流れ</h2>
+    <ol class="day">
+      <li><time>8:30</time><div><h3>出社・点呼</h3><p>アルコールチェックと体調の確認。その日の配送先を確認します。</p></div></li>
+      <li><time>9:00</time><div><h3>積み込み</h3><p>店舗ごとに仕分けされたカゴ台車を、フォークリフトの担当者と一緒に積み込みます。</p></div></li>
+      <li><time>10:00</time><div><h3>配送 1便目</h3><p>午前中に2店舗へ配送します。</p></div></li>
+      <li><time>12:30</time><div><h3>昼休憩（60分）</h3><p>センターに戻って休憩。休憩室には電子レンジと仮眠スペースがあります。</p></div></li>
+      <li><time>13:30</time><div><h3>配送 2便目</h3><p>午後は2〜3店舗へ。空になったカゴ台車を回収して戻ります。</p></div></li>
+      <li><time>17:00</time><div><h3>車両点検・日報</h3><p>洗車と点検をして、タブレットで日報を入力します。</p></div></li>
+      <li class="end"><time>17:30</time><div><h3>退勤</h3><p>遅くとも18時には会社を出られます。</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2>先輩の声</h2>
+    <div class="voices">
+      <article class="voice">
+        <div class="who"><span class="face" aria-hidden="true">中</span><p><b>中島さん（34歳）</b>入社3年目／前職：飲食店の店長</p></div>
+        <h3>子どもと一緒に夕ごはんを食べられるようになりました。</h3>
+        <p>飲食店では帰りが毎日深夜でした。転職してからは、平日も子どものお風呂を担当しています。運転は普通免許しかありませんでしたが、入社半年で中型免許を取らせてもらいました。</p>
+      </article>
+      <article class="voice">
+        <div class="who"><span class="face" aria-hidden="true">林</span><p><b>林さん（51歳）</b>入社8年目／前職：長距離ドライバー</p></div>
+        <h3>同じお店に通うから、店員さんと顔なじみに。</h3>
+        <p>長距離のころは車中泊も多く、体がきつくなっていました。今は毎日家で寝られます。お店の方に「いつもありがとう」と声をかけてもらえるのも、ルート配送ならではです。</p>
+      </article>
+    </div>
+    <p class="voice-note">※架空の人物です。</p>
+  </div>
+</section>
+
+<section class="sec sec-soft">
+  <div class="wrap">
+    <h2>募集要項</h2>
+    <div class="req-wrap">
+      <table class="req">
+        <tr><th>職種</th><td>ルート配送ドライバー（4トン車）</td></tr>
+        <tr><th>雇用形態</th><td>正社員（試用期間3か月・条件の変更なし）</td></tr>
+        <tr><th>給与</th><td><span class="money">月給 26万〜32万円</span><small>経験・保有免許により決定。残業代は1分単位で別途支給。</small></td></tr>
+        <tr><th>勤務時間</th><td>8:30〜17:30（休憩60分）</td></tr>
+        <tr><th>休日</th><td>週休2日（日曜＋シフト制で1日）、年末年始、夏季休暇<small>年間休日120日</small></td></tr>
+        <tr><th>応募資格</th><td>普通免許（AT限定可）<small>中型免許は入社後に取得できます（費用は会社が全額負担）</small></td></tr>
+        <tr><th>勤務地</th><td>埼玉県川越市南台0-0-0　川越物流センター（架空の住所）<small>マイカー通勤OK・駐車場無料</small></td></tr>
+        <tr><th>待遇</th><td>社会保険完備、賞与年2回、退職金制度、制服貸与、無事故手当（月5,000円）</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2>応募から入社まで</h2>
+    <ol class="steps">
+      <li><h3>応募</h3><p>下のフォームから送信してください。履歴書は面接の日で大丈夫です。</p></li>
+      <li><h3>お電話</h3><p>2営業日以内に、採用担当から面接日の相談のお電話をします。</p></li>
+      <li><h3>面接・見学</h3><p>面接のあと、トラックの運転席に座ってみることもできます。</p></li>
+      <li><h3>内定</h3><p>面接から1週間以内にご連絡します。入社日はご相談に応じます。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec apply" id="apply">
+  <div class="wrap">
+    <h2>応募フォーム</h2>
+    <p class="lead">入力は3分ほどで終わります。まずは話を聞いてみたい、という方も歓迎です。</p>
+    <form class="form" id="applyForm" novalidate>
+      <div class="field"><label for="a-name">お名前<em>必須</em></label><input id="a-name" autocomplete="name" placeholder="例）佐藤 大輔"></div>
+      <div class="field"><label for="a-age">年齢<em>必須</em></label><input id="a-age" type="number" inputmode="numeric" min="18" placeholder="例）35"></div>
+      <div class="field full"><label for="a-tel">電話番号<em>必須</em></label><input id="a-tel" type="tel" autocomplete="tel" placeholder="例）090-0000-0000"></div>
+      <fieldset class="field full">
+        <legend>お持ちの免許<em>必須</em></legend>
+        <div class="radios">
+          <label><input type="radio" name="license" value="普通免許（AT限定）">普通（AT限定）</label>
+          <label><input type="radio" name="license" value="普通免許">普通</label>
+          <label><input type="radio" name="license" value="中型免許">中型</label>
+          <label><input type="radio" name="license" value="大型免許">大型</label>
+        </div>
+      </fieldset>
+      <div class="field full"><label for="a-time">お電話がつながりやすい時間</label>
+        <select id="a-time"><option>いつでも</option><option>9:00〜12:00</option><option>12:00〜15:00</option><option>15:00〜18:00</option><option>18:00〜20:00</option></select>
+      </div>
+      <p class="form-msg" id="applyMsg" role="status" hidden></p>
+      <div class="submit"><button class="btn" type="submit">この内容で応募する</button><small>送信しても、すぐに採用が決まるわけではありません。</small></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>株式会社みどり運輸　埼玉県川越市南台0-0-0（架空の住所）</span>
+    <span>&copy; 2026 Midori Unyu</span>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('applyForm');
+  const msg = document.getElementById('applyMsg');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('a-name');
+    const age = document.getElementById('a-age');
+    const tel = document.getElementById('a-tel');
+    const license = form.querySelector('input[name="license"]:checked');
+    msg.hidden = false;
+    msg.className = 'form-msg ng';
+    if (!name.value.trim() || !age.value.trim() || !tel.value.trim() || !license) {
+      msg.textContent = '「必須」の項目をすべて入力してください。';
+      return;
+    }
+    // 普通免許の取得年齢に合わせて18歳以上のみ確認する（上限は設けない）
+    if (!(Number(age.value) >= 18)) {
+      msg.textContent = '年齢は18以上の数字で入力してください。';
+      age.focus();
+      return;
+    }
+    msg.className = 'form-msg ok';
+    msg.textContent = name.value.trim() + ' 様、ご応募ありがとうございます（' + license.value + '）。2営業日以内に採用担当からお電話します。（サンプルサイトのため、実際には送信されません）';
+  });
+</script>
+</body>
+</html>
