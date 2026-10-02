@@ -54,8 +54,9 @@ a { color: inherit; }
 .clock .hour { width: 6px; height: 26%; transform: translateX(-50%) rotate(180deg); }
 .clock .min { width: 4px; height: 36%; transform: translateX(-50%) rotate(0deg); }
 .clock .center { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; border-radius: 50%; background: var(--ink); transform: translate(-50%, -50%); }
-.clock .cap { position: absolute; left: 0; right: 0; bottom: 18%; text-align: center; font-weight: 700; color: var(--teal); font-size: 14px; }
-@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .clock { width: 180px; order: -1; } }
+/* 文字盤の下の帯に置き、針と重ならないようにする */
+.clock .cap { position: absolute; left: 50%; bottom: -14px; transform: translateX(-50%); white-space: nowrap; background: var(--yellow); color: var(--ink); font-weight: 700; font-size: 14px; padding: 2px 14px; border-radius: 999px; }
+@media (max-width: 760px) { .hero-grid { grid-template-columns: 1fr; } .clock { width: 180px; order: -1; margin-bottom: 16px; } }
 
 /* 数字 */
 .nums { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 2px solid var(--ink); border-radius: 12px; overflow: hidden; margin-top: -28px; background: #fff; position: relative; }
